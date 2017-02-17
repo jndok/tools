@@ -214,7 +214,6 @@ int main(int argc, const char * argv[]) {
     
     if (!empty) {
         if (!get_all_panic_reports) {
-            printf("%s\n", latest_name);
             dump_panic_report(afc_client, latest_name, output_path);
             
             uint32_t bytes_to_show = 2048;
